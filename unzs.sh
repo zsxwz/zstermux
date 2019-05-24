@@ -48,7 +48,5 @@ elif
 	cd ~
 	rm zs.sh
 	rm -rf zstermux
-	cd .termux
-	rm termux.properties
 fi
 exit
