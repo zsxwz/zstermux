@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 cd zstermux
+mkdir $/HOME/.termux
 echo "自用的一个无聊脚本，获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
 echo "第一次安装，请先安装运行环境"
 echo "1.运行环境安装更新"
