@@ -2,7 +2,7 @@
 
 cd zstermux
 
-echo "自用的一个无聊脚本，获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
+echo "获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
 echo "第一次安装，请先安装运行环境"
 echo "1.运行环境安装更新"
 echo "2.百度网盘提取码查询"
@@ -12,6 +12,7 @@ echo "5.BaiduPCS-Go"
 echo "6.oh-my-zsh配色"
 echo "7.更多按键"
 echo "8.卸载/更新"
+echo "0.退出脚本"
 echo -n "请输入需要执行的命令序号:"
 read int
 if
@@ -26,17 +27,15 @@ elif
 
 elif
 	[ $int -eq "3" ] ; then
-	echo "代理启动之后，请修改WiFi代理：127.0.0.1，端口：8080"
 	bash UnblockNeteaseMusic.sh
 
 elif
 	[ $int -eq "4" ] ; then
-	echo "启动之后，chrome浏览器打开，localhost:8888"
 	bash a2.sh
 elif
 	[ $int -eq "5" ] ; then
-	echo "login之后，请修改下载目录cd /apps/baidu_shurufa"
-	echo "修改目录之后，修改id：config set -appid=265486"
+	echo -e "\033[31m登陆login之后，请修改下载目录cd /apps/baidu_shurufa\033[0m"
+	echo -e "\033[31m修改目录之后，修改id：config set -appid=265486\033[0m"
 	bash baidu.sh
 elif
 	[ $int -eq "6" ] ; then
@@ -50,5 +49,8 @@ elif
 elif
         [ $int -eq "8" ] ; then
 	bash unzs.sh
+elif
+	[ $int -eq "0" ] ; then
+	exit
 fi
 exit
