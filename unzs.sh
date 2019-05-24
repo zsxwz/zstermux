@@ -7,13 +7,14 @@ echo "3.aria2高速下载"
 echo "4.BaiduPCS-Go"
 echo "5.oh-my-zsh配色修改"
 echo "6.修改按键"
+echo "0.卸载脚本"
 echo -n "请输入需要执行的命令序号:"
 
 read int
 if
 	[ $int -eq "1" ] ; then        
-  rm -rf /data/data/com.termux/files/usr/lib/node_modules/baidupankey
-  rm /data/data/com.termux/files/usr/bin/bdp
+        rm -rf /data/data/com.termux/files/usr/lib/node_modules/baidupankey
+        rm /data/data/com.termux/files/usr/bin/bdp
 	bash zs.sh
 elif
 	[ $int -eq "2" ] ; then
