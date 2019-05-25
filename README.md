@@ -11,6 +11,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/inst
 ```
 bash zs.sh
 ```
+结束进程
+```
+ps
+
+kill pid
+```
 
 预览图：
 
