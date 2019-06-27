@@ -17,7 +17,7 @@ echo -n "请输入需要执行的命令序号:"
 read int
 if
 	[ $int -eq "1" ] ; then
-        pkg install git wget curl unzip nodejs aria2 proot vim tsu python openssh -y
+        pkg install wget unzip nodejs aria2 -y
 	cd ~
 	bash zs.sh
 
