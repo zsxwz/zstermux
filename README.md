@@ -1,6 +1,6 @@
 # zstermux
 
-一个termux一键脚本，一键安装运行BaiduPCS-Go，UnblockNeteaseMusic，aria2等等。
+一个termux一键脚本，一键安装运行各种好玩的，UnblockNeteaseMusic，aria2等等。
 
 安装：
 ```
