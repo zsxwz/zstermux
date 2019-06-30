@@ -2,7 +2,8 @@
 
 if [ -d "$PREFIX/lib/node_modules/m3u8download" ] ; then
 
-	m3u8download -helse
+	m3u8download -h
+	else
 
 	npm install -g m3u8download
 
