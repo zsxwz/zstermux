@@ -11,7 +11,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/inst
 
 执行脚本：
 ```
-bash zs.sh
+sh zs.sh
 ```
 结束进程
 ```
