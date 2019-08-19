@@ -35,7 +35,7 @@ elif
 elif
 	[ $int -eq "5" ] ; then
 	echo -e "\033[31m登陆login之后，请修改下载目录cd /apps/baidu_shurufa\033[0m"
-	echo -e "\033[31m修改目录之后，修改id：config set -appid=309847\033[0m"
+	echo -e "\033[31m若下载无速度，修改目录之后，修改id：config set -appid=309847\033[0m"
 	bash baidu.sh
 elif
 	[ $int -eq "6" ] ; then
