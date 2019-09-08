@@ -3,7 +3,7 @@
 cd zstermux
 echo ""
 echo "获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
-echo -e "\033[31m环境安装，第一次安装使用，请务必先安装一次运行环境,vim nodejs screen等等，输入1，即可。\033[0m"
+echo -e "\033[31m环境安装，第一次安装使用，或者安装过程报错，请务必安装一次运行环境,vim nodejs screen等等，输入1，即可。\033[0m"
 echo ""
 echo "1.运行环境安装更新"
 echo "2.百度网盘提取码查询"
