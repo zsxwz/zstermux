@@ -1,14 +1,16 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -d "$HOME/BaiduPCS-Go" ] ; then
-	cd ~/BaiduPCS-Go
-	./BaiduPCS-Go
-else
-	cd ~
-	wget -O 1.zip https://github.com/iikira/BaiduPCS-Go/releases/download/v3.5.6/BaiduPCS-Go-v3.5.6-android-21-arm64.zip
-	unzip 1.zip && rm 1.zip
-	mv BaiduPCS-Go-v3.5.6-android-21-arm64 BaiduPCS-Go
-	cd ~/BaiduPCS-Go
-	./BaiduPCS-Go
+echo "1.安装命令行版百度"
+echo "2.安装网页版百度"
+
+echo -n "请输入需要执行的命令序号:"
+read int
+if
+	[ $int -eq "1" ] ; then
+        cd zstermux
+	sh baidupcs-go.sh
+elif
+	[ $int -eq "2" ] ; then
+	cd zstermux
+	sh baidupcs-web.sh
 fi
-exit
