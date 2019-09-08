@@ -10,12 +10,9 @@ read int
 if
 	[ $int -eq "1" ] ; then
         sh a2.sh
-	cd ~
-	sh zs.sh
-
 elif
 	[ $int -eq "2" ] ; then
-	termux-setup-storage
+	mkdir /.config/aria2
 	cp aria2.conf ~/.config/aria2/aria2.conf
   echo ""
 	echo "已使用推荐配置，如需修改配置确保环境安装之后，vim .config/aria2/aria2.conf"
