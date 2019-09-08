@@ -13,7 +13,7 @@ if
 elif
 	[ $int -eq "2" ] ; then
 	cd ~
-	mkdir -p .conf/aria2
+	mkdir -p .config/aria2
 	cp aria2.conf ~/.config/aria2/aria2.conf
   echo ""
 	echo "已使用推荐配置，如需修改配置确保环境安装之后，vim .config/aria2/aria2.conf"
