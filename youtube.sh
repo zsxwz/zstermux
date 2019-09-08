@@ -7,7 +7,7 @@ read int
 if
 	[ $int -eq "1" ] ; then
         pkg install python -y
-	pip install upgrade pip
+	pip install --upgrade pip
 	sh youtube.sh
 
 elif
