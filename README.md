@@ -4,7 +4,6 @@
 
 安装脚本：
 ```
-pkg install git
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/install.sh)"  
 ```
