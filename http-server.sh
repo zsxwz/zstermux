@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -d "$PREFIX/bin/http-server" ] ; then
+if [ ! -d "$PREFIX/bin/http-server" ] ; then
   screen -S http http-server
 
 else
