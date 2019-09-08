@@ -39,4 +39,4 @@ screen -r aria2
 
 预览图：
 
-![https://zsxwz.com/2019/09/08/%e5%a7%bf%e5%8a%bftermux%e8%84%9a%e6%9c%ac%e5%a4%a7%e6%9b%b4%e6%96%b0/]
+![https://ae01.alicdn.com/kf/Ha1f04148117e4eec9637a729ac7ad307l.jpg]
