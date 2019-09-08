@@ -9,3 +9,4 @@ elif
   termux-setup-storage
   screen -S http http-serve
 fi
+exit
