@@ -14,10 +14,6 @@ if
 
 elif
 	[ $int -eq "2" ] ; then
-	pip install youtube-dl
-	npm install -g youtube-dl-interactive
-
-	echo "使用方法："
-	echo "youtube-dl-interactive 网页链接url"
-
+	sh youtube-dl.sh
 fi
+exit
