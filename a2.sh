@@ -12,7 +12,9 @@ if [ -d "$HOME/webui-aria2" ] ; then
 	echo -e "\033[31maria2面板已在后台运行\033[0m"
 	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
 	echo ""
-
+	
+	cd ~
+	cd zsternux
 	bash aria2.sh
 else
 	cd ~
@@ -24,7 +26,9 @@ else
         echo -e "\033[31maria2面板已在后台运行\033[0m"
 	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
 	echo ""
-
+	
+	cd ~
+	cd zstermux
 	bash aria2.sh
 fi
 exit
