@@ -9,10 +9,8 @@ echo -n "请输入需要执行的命令序号:"
 read int
 if
 	[ $int -eq "1" ] ; then
-        cd zstermux
 	sh baidupcs-go.sh
 elif
 	[ $int -eq "2" ] ; then
-	cd zstermux
 	sh baidupcs-web.sh
 fi
