@@ -39,4 +39,4 @@ screen -r aria2
 
 预览图：
 
-![https://ae01.alicdn.com/kf/Ha1f04148117e4eec9637a729ac7ad307l.jpg]
+![图](https://ae01.alicdn.com/kf/Ha1f04148117e4eec9637a729ac7ad307l.jpg)
