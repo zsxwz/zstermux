@@ -21,6 +21,7 @@ echo -n "请输入需要执行的命令序号:"
 read int
 if
 	[ $int -eq "1" ] ; then
+	termux-setup-storage
         pkg install wget unzip nodejs aria2 vim screen -y
 	cd ~
 	bash zs.sh
