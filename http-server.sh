@@ -4,7 +4,7 @@ if [ -d "$PREFIX/bin/http-server" ] ; then
   termux-setup-storage
   screen -S http http-server
 
-elif
+else
   npm install -g http-seever
   termux-setup-storage
   screen -S http http-serve
