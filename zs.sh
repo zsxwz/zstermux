@@ -4,6 +4,7 @@ cd zstermux
 echo ""
 echo "获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
 echo -e "\033[31m环境安装，第一次安装使用，请务必先安装一次运行环境,vim nodejs screen等等，输入1，即可。\033[0m"
+echo ""
 echo "1.运行环境安装更新"
 echo "2.百度网盘提取码查询"
 echo "3.网易云音乐代理"
@@ -12,7 +13,8 @@ echo "5.百度网盘不限速"
 echo "6.oh-my-zsh配色"
 echo "7.更多按键"
 echo "8.youtube-dl-interactive下载网页视频"
-echo "9.卸载/更新"
+echo "9.http-server文件管理服务"
+echo "10.卸载/更新"
 echo "0.退出脚本"
 echo ""
 echo -n "请输入需要执行的命令序号:"
@@ -50,7 +52,10 @@ elif
 	[ $int -eq"8" ] ; then
 	sh youtube.sh
 elif
-        [ $int -eq "9" ] ; then
+        [ $int -eq "10" ] ; then
+	bash http-server.sh
+elif
+        [ $int -eq "10" ] ; then
 	bash unzs.sh
 elif
 	[ $int -eq "0" ] ; then
