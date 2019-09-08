@@ -14,13 +14,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/inst
 sh zs.sh
 ```
 
-使用screen后台运行程序，重启手机或者强制停止termux即可关闭后台程序。或者：
+使用screen后台运行，重启手机或者强制停止termux即可关闭后台程序。或者：
 ```
 //查看后台程序
 screen -ls
 
 //关闭程序
 kill pid
+
+//恢复窗口，screen -r 窗口名，如恢复aria2窗口：
+screen -r aria2
 ```
 一些注意事项：
 
