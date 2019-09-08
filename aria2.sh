@@ -15,7 +15,7 @@ elif
 	cd ~
 	mkdir -p .config/aria2
 	cp aria2.conf ~/.config/aria2/aria2.conf
-  echo ""q
+  echo ""
 	echo "已使用推荐配置，如需修改配置：vim .config/aria2/aria2.conf"
   echo ""
 	sh aria2.sh
