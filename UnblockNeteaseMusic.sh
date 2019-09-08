@@ -3,8 +3,10 @@
 if [ -d "$HOME/UnblockNeteaseMusic" ] ; then
 	cd ~/UnblockNeteaseMusic
 	screen -dmS music node app.js
+	echo ""
         echo -e "\033[31m代理已在后台运行\033[0m"
 	echo -e "\033[31m请修改WiFi代理为，127.0.0.1，端口为，8080\033[0m"
+	echo ""
 	cd ~
 	bash zs.sh
 else
@@ -13,8 +15,10 @@ else
 	git clone https://github.com/nondanee/UnblockNeteaseMusic.git
 	cd ~/UnblockNeteaseMusic
 	screen -dmS node app.js
+	echo ""
 	echo -e "\033[31m代理已在后台运行\033[0m"
         echo -e "\033[31m请修改WiFi代理为，127.0.0.1，端口为，8080\033[0m"
+	echo ""
 	cd ~
 	bash zs.sh
 fi
