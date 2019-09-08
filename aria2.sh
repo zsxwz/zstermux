@@ -21,6 +21,7 @@ elif
 elif
 	[ $int -eq "3" ] ; then
 	screen -S aria2 -X quit
+	sh aria2.sh
   echo ""
 	echo "aria2服务已关闭"
   echo ""
