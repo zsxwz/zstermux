@@ -49,7 +49,7 @@ elif
 	cp termux.properties ~/.termux
 	echo "重启app生效"
 elif
-	[ $int -eq"8" ] ; then
+	[ $int -eq "8" ] ; then
 	sh youtube.sh
 elif
         [ $int -eq "10" ] ; then
