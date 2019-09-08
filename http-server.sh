@@ -3,12 +3,13 @@ echo ""
 echo "1.安装http-server"
 echo "2.运行http-server"
 echo "3.关闭http-server"
-
+echo ""
 echo -n "请输入需要执行的命令序号:"
 read int
 if
 	[ $int -eq "1" ] ; then
         npm install - g http-server
+	
 echo"已安装http服务"
 echo""
 sh http-server.sh
