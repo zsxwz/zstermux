@@ -8,6 +8,7 @@ echo -n "请输入需要执行的命令序号:"
 read int
 if
 	[ $int -eq "1" ] ; then
+	
 	sh http.sh
 elif
 	[ $int -eq "2" ] ; then
@@ -15,8 +16,8 @@ elif
 elif
 	[ $int -eq "3" ] ; then
         screen -S http -X quit
-echo"服务已关闭"
-echo""
+	echo"服务已关闭"
+	echo""
 sh http-server.sh
 fi
 exit
