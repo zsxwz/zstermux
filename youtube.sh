@@ -10,7 +10,8 @@ if
 	[ $int -eq "1" ] ; then
         pkg install python -y
 	pip install --upgrade pip
-
+	sh youtube-dl.sh
+     
 elif
 	[ $int -eq "2" ] ; then
 	sh youtube-dl.sh
