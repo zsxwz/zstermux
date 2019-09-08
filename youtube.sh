@@ -1,7 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
-
+echo ""
 echo "1.安装Python，软件包比较大，运行环境没有预安装"
 echo "2.安装youtube-dl-interactive"
+echo ""
+
 echo -n "请输入需要执行的命令序号:"
 read int
 if
