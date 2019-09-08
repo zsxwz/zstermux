@@ -14,7 +14,7 @@ if [ -d "$HOME/webui-aria2" ] ; then
 	echo ""
 	
 	cd ~
-	bash zs.sh
+	bash aria2.sh
 else
 	cd ~
 	echo -e "\033[31m正在安装aria2面板\033[0m"
@@ -26,6 +26,6 @@ else
 	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
 	echo ""
 	cd ~
-	bash zs.sh
+	bash aria2.sh
 fi
 exit
