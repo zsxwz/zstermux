@@ -12,7 +12,9 @@ if
         sh a2.sh
 elif
 	[ $int -eq "2" ] ; then
-	mkdir /.config/aria2
+	cd ~
+	mkdir .config/aria2
+	cd zstermux
 	cp aria2.conf ~/.config/aria2/aria2.conf
   echo ""
 	echo "已使用推荐配置，如需修改配置确保环境安装之后，vim .config/aria2/aria2.conf"
