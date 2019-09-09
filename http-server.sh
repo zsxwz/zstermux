@@ -12,6 +12,7 @@ if
 	sh http-server.sh
 elif
 	[ $int -eq "2" ] ; then
+cd ~
 	screen -S http http-server
 elif
 	[ $int -eq "3" ] ; then
