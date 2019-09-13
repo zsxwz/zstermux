@@ -23,7 +23,6 @@ else
 	echo "如需修改配置请安装命令行版百度"
 	echo "baidupcs-web已在后台运行，请用浏览器打开访问，localhost:5299"
 	echo ""
-        am start -a android.intent.action.VIEW -d http://localhost:5299
 	cd ~
 	sh zs.sh
 fi
