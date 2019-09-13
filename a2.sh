@@ -15,7 +15,7 @@ if [ -d "$HOME/webui-aria2" ] ; then
 	echo ""
         cd ~
         sh zs.sh
-        am start -a android.intent.action.VIEW -d http://localhost:5299
+        am start -a android.intent.action.VIEW -d http://localhost:8888
 else
 	cd ~
 	echo -e "\033[31m正在安装aria2面板\033[0m"
@@ -28,6 +28,6 @@ else
 	echo ""
         cd ~
         sh zs.sh
-        am start -a android.intent.action.VIEW -d http://localhost:5299
+        am start -a android.intent.action.VIEW -d http://localhost:8888
 fi
 exit
