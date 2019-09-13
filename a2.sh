@@ -14,8 +14,11 @@ if [ -d "$HOME/webui-aria2" ] ; then
 	echo -e "\033[31maria2面板已在后台运行\033[0m"
 	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
 	echo ""
+        am start -a android.intent.action.VIEW -d http://localhost:8888
         cd ~
         sh zs.sh
+        
+
 else
 	cd ~
 	echo -e "\033[31m正在安装aria2面板\033[0m"
@@ -26,6 +29,7 @@ else
         echo -e "\033[31maria2面板已在后台运行\033[0m"
 	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
 	echo ""
+        am start -a android.intent.action.VIEW -d http://localhost:8888
         cd ~
         sh zs.sh
         
