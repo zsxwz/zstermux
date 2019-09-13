@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+screen -wipe
 screen -dmS aria2 aria2c --enable-rpc --rpc-listen-all
 echo ""
 echo -e "\033[31maria2服务已在后台运行\033[0m"
