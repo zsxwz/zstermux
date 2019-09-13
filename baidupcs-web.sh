@@ -2,6 +2,7 @@
 
 if [ -d "$HOME/BaiduPCS-web" ] ; then
 	cd ~/BaiduPCS-web
+        screen -wipe
 	screen -dmS baidu-web ./BaiduPCS-Go
 	echo ""
 	echo ""
@@ -10,6 +11,7 @@ if [ -d "$HOME/BaiduPCS-web" ] ; then
 	echo ""
 	cd ~
 	sh zs.sh
+        am start -a android.intent.action.VIEW -d http://localhost:5299
 else
 	cd ~
 	wget -O 1.zip https://github.com/liuzhuoling2011/baidupcs-web/releases/download/3.6.8/BaiduPCS-Go-3.6.8-android-arm64.zip
@@ -24,5 +26,7 @@ else
 	
 	cd ~
 	sh zs.sh
+
+        am start -a android.intent.action.VIEW -d http://localhost:5299
 fi
 exit
