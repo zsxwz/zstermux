@@ -10,7 +10,6 @@ read int
 if
 	[ $int -eq "1" ] ; then
         sh a2.sh
-	sh aria2.sh
 elif
 	[ $int -eq "2" ] ; then
 	cd ~
