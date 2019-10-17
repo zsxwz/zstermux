@@ -35,7 +35,7 @@ elif
 	[ $int -eq "5" ] ; then
 	cd ~/.termux
 	vim termux.properties
-	echo "重启app生效"
+	termux-reload-settings
 elif
 	[ $int -eq "0" ] ; then
 	cd ~
