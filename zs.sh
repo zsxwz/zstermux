@@ -44,11 +44,11 @@ elif
 	[ $int -eq "6" ] ; then
 	cd ~
 	sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
-	echo "重启app生效"
+	termux-reload-settings
 elif
 	[ $int -eq "7" ] ; then
 	cp termux.properties ~/.termux
-	echo "重启app生效"
+	termux-reload-settings
 elif
 	[ $int -eq "8" ] ; then
 	sh youtube.sh
