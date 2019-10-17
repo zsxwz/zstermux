@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+termux-wake-lock
 cd zstermux
 echo ""
 echo "获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
