@@ -5,6 +5,7 @@ if [ -d "$PREFIX/bin/youtube-dl" ] ; then
 	echo "使用方法："
 	echo "youtube-dl-interactive 网页链接url"
 else
+        pkg install ffmpeg -y
 	pip install youtube-dl
 	npm install -g youtube-dl-interactive
   echo ""
