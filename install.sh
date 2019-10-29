@@ -7,4 +7,5 @@ mkdir .termux
 cp -f "$HOME/zstermux/zs.sh" "$HOME/zs.sh"
 
 bash zs.sh
+alias zs='sh zs.sh'
 exit
