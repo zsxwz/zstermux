@@ -11,6 +11,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/inst
 执行脚本：
 ```
 sh zs.sh
+
+#或者
+zs
 ```
 
 使用screen后台运行，重启手机或者强制停止termux即可关闭后台程序。或者：
