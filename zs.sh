@@ -10,11 +10,10 @@ echo "2.百度网盘提取码查询"
 echo "3.网易云音乐代理"
 echo "4.aria2高速下载"
 echo "5.百度网盘不限速"
-echo "6.oh-my-zsh配色"
-echo "7.更多按键"
-echo "8.youtube-dl-interactive下载网页视频"
-echo "9.http-server文件管理服务"
-echo "10.卸载/更新"
+echo "6.youtube-dl下载网页视频"
+echo "7.http-server服务"
+echo "8.oh-my-zsh终端配色"
+echo "9.更多按键"
 echo "0.退出脚本"
 echo ""
 echo -n "请输入需要执行的命令序号:"
@@ -37,27 +36,28 @@ elif
 elif
 	[ $int -eq "4" ] ; then
 	bash aria2.sh
+
 elif
 	[ $int -eq "5" ] ; then
 	bash baidu.sh
+
 elif
 	[ $int -eq "6" ] ; then
+	sh youtube-dl.sh
+elif
+        [ $int -eq "7" ] ; then
+	bash http-server.sh
+
+elif
+	[ $int -eq "8" ] ; then
 	cd ~
 	sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
 	termux-reload-settings
 elif
-	[ $int -eq "7" ] ; then
+	[ $int -eq "9" ] ; then
 	cp termux.properties ~/.termux
 	termux-reload-settings
-elif
-	[ $int -eq "8" ] ; then
-	sh youtube.sh
-elif
-        [ $int -eq "9" ] ; then
-	bash http-server.sh
-elif
-        [ $int -eq "10" ] ; then
-	bash unzs.sh
+
 elif
 	[ $int -eq "0" ] ; then
 	exit
