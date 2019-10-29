@@ -55,8 +55,7 @@ elif
 	termux-reload-settings
 elif
 	[ $int -eq "9" ] ; then
-	cp termux.properties ~/.termux
-	termux-reload-settings
+	sh key.sh
 
 elif
 	[ $int -eq "0" ] ; then
