@@ -5,6 +5,13 @@ if [ -x "$(command -v annie)" ] ; then
 	annie
 else
 	cd ~
-	echo "anz"
+	echo "安装golang"
+	echo "安装过程如果报错，请到终端设置，修改为中科大源"
+	pkg install golang -y
+	echo "安装annie，请耐心等待"
+	go get github.com/iawia002/annie
+	mv go/bin/annie /data/data/com.termux/files/usr/bin/annie
+	echo "annie已安装，使用请查看帮助"
+	annie
 fi
 exit
