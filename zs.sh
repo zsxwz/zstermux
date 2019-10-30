@@ -17,6 +17,7 @@ echo "7.推荐终端设置"
 echo "0.退出脚本"
 echo ""
 echo "请输入需要执行的命令序号:"
+
 read int
 if
 	[ $int -eq "1" ] ; then
