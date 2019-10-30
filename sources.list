@@ -1,0 +1,2 @@
+# The main termux repository:
+deb https://mirrors.ustc.edu.cn/termux stable main
