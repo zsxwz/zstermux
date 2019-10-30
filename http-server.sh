@@ -1,24 +1,16 @@
 #!/data/data/com.termux/files/usr/bin/bash
-echo ""
-echo "1.安装http-server"
-echo "2.运行http-server"
-echo "3.关闭http-server"
-echo ""
-echo -n "请输入需要执行的命令序号:"
-read int
+
+echo "安装/运行http-server"
+
 if
-	[ $int -eq "1" ] ; then
+	if [ -x "$(command -v http-server)" ] ; then
+	echo "运行"
+	http-server
+else
+        echo "安装服务"
 	npm install -g http-server
-	sh http-server.sh
-elif
-	[ $int -eq "2" ] ; then
-cd ~
-	screen -S http http-server
-elif
-	[ $int -eq "3" ] ; then
-        screen -S http -X quit
-	echo"服务已关闭"
-	echo""
-sh http-server.sh
+	echo "运行"
+	http-server
+
 fi
 exit
