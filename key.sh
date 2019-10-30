@@ -12,6 +12,7 @@ if
 
 elif
 	[ $int -eq "2" ] ; then
+	cd ~
 	vim .termux/termux.properties
 	termux-reload-settings
 fi
