@@ -1,5 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
-echo ""
 
 if [ -d "$HOME/go/src/github.com/jpillora/cloud-torrent" ] ; then
         cd ~
