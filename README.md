@@ -42,7 +42,7 @@ bdp -u https://pan.baidu.com/s/xxxxx
 
 3. 边下边播：[peerflix](https://zsxwz.com/2019/09/13/%e7%bd%91%e9%a1%b5%e7%89%88bt%e7%a3%81%e5%8a%9b%e4%b8%8b%e8%bd%bd%e5%b7%a5%e5%85%b7peerflix-server%ef%bc%8c%e8%be%b9%e4%b8%8b%e8%be%b9%e6%92%ad%e3%80%82/)
 
-- 已修改默认下载文件夹为/sdcard/torrert
+- 已修改默认下载文件夹为/sdcard/Download
 - 如果一点速度都没有请自行修改tracker，配置文件目录：~/.config/peerflix-server/config.json
 
 4. annie视频下载：[annie](https://zsxwz.com/2019/09/25/annie%e4%b8%80%e6%ac%be%e5%9f%ba%e4%ba%8ego%e7%9a%84%e5%90%84%e5%a4%a7%e8%a7%86%e9%a2%91%e7%bd%91%e7%ab%99%e8%a7%86%e9%a2%91%e4%b8%8b%e8%bd%bd%e5%88%a9%e5%99%a8/)
@@ -58,7 +58,7 @@ annie -aria2 url
 - 默认下载目录是：/data/data/com.termux/files/home/
 - ls -a,查看目录下的文件，mv 123.mp4 /sdcard/Download，自己手动把123.mp4移动到内存卡上
 
-6. 老司机cloud-torrent：https://bbs.zsxwz.com/thread-1304.htm
+6. 老司机cloud-torrent：[cloud-torrent](https://bbs.zsxwz.com/thread-1304.htm)
 
 - 安装之后，请自己设置下载保存目录，不然直接下载在termux安装目录下。
 
