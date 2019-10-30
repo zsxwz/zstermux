@@ -9,7 +9,7 @@ echo -e "\033[31m国内用户推荐使用科大源，终端设置里修改即可
 echo "1.基础运行环境，软件安装"
 echo "2.百度网盘提取码查询"
 echo "3.网易云音乐代理"
-echo "4.aria2高速下载"
+echo "4.常用磁力下载工具"
 echo "5.百度网盘不限速"
 echo "6.youtube-dl视频下载"
 echo "7.http-server服务"
@@ -34,7 +34,7 @@ elif
 
 elif
 	[ $int -eq "4" ] ; then
-	bash aria2.sh
+	bash cloud.sh
 
 elif
 	[ $int -eq "5" ] ; then
