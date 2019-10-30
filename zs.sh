@@ -40,8 +40,12 @@ elif
 	[ $int -eq "5" ] ; then
 	sh video.sh
 elif
-        [ $int -eq "7" ] ; then
+        [ $int -eq "6" ] ; then
 	bash http-server.sh
+	
+elif
+        [ $int -eq "7" ] ; then
+	bash setting.sh
 
 elif
 	[ $int -eq "0" ] ; then
