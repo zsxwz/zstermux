@@ -35,7 +35,7 @@ elif
 
 elif
 	[ $int -eq "4" ] ; then
-	bash cloud.sh
+	bash torrent.sh
 
 elif
 	[ $int -eq "5" ] ; then
