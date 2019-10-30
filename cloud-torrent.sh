@@ -6,6 +6,7 @@ if [ -d "$HOME/go/bin/cloud-torrent" ] ; then
 	cd go/bin
 	./cloud-torrent -p 1024
 	am start -a android.intent.action.VIEW -d http://localhost:1024
+	sh zs.sh
 else
 	cd ~
 	echo "安装golang"
@@ -16,5 +17,6 @@ else
 	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1024"
 	echo ""
         am start -a android.intent.action.VIEW -d http://localhost:1024
+	sh zs.sh
 fi
 exit
