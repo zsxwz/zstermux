@@ -21,6 +21,10 @@ if [ -d "$HOME/webui-aria2" ] ; then
 
 else
 	cd ~
+	mkdir -p .config/aria2
+	cd zstermux
+	cp aria2.conf ~/.config/aria2/aria2.conf
+        cd ~
 	echo -e "\033[31m正在安装aria2面板\033[0m"
 	git clone https://github.com/ziahamza/webui-aria2.git
 	cd webui-aria2
