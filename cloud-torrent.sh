@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 echo ""
 
-if [ -x "$(command -v cloud-torrent)" ] ; then
+if [ -d "$HOME/go/src/github.com/jpillora/cloud-torrent" ] ; then
         cd ~
 	cd go/bin
 	./cloud-torrent -p 1024
