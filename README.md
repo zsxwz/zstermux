@@ -64,7 +64,8 @@ annie -aria2 url
 
 7. aria2，可以下载磁力也可以下载其他。
 
-- 
+- 下载磁力链接之后如果没有速度就更新一下tracker
+
 
 8. http-server，本地http服务，方便局域网内，发送文件。
 
