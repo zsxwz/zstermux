@@ -16,7 +16,7 @@ echo "6.http-server服务"
 echo "7.推荐终端设置"
 echo "0.退出脚本"
 echo ""
-echo "请输入需要执行的命令序号:"
+echo -n "请输入需要执行的命令序号:"
 
 read int
 if
