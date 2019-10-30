@@ -20,7 +20,7 @@ read int
 if
 	[ $int -eq "1" ] ; then
 	termux-setup-storage
-        pkg install wget unzip nodejs aria2 vim screen -y
+        pkg install wget unzip nodejs aria2 vim screen axel ffmpeg -y
 	cd ~
 	bash zs.sh
 
