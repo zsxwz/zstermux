@@ -3,7 +3,7 @@
 if [ -d "$PREFIX/bin/youtube-dl" ] ; then
   echo ""
 	echo "使用方法："
-	echo "dl 视频链接url"
+	echo "youtube-dl-interactive 视频链接url"
 else
         echo "安装更新python"
         pkg install python -y
@@ -11,8 +11,7 @@ else
 	echo "安装youtube-dl-interactive"
 	pip install youtube-dl
 	npm install -g youtube-dl-interactive
-	alias dl='youtube-dl-interactive'
 	echo "使用方法："
-	echo "dl 视频链接url"
+	echo "youtube-dl-interactive 视频链接url"
 fi
 exit
