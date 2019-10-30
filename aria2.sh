@@ -7,10 +7,6 @@ echo -n "请输入需要执行的命令序号:"
 read int
 if
 	[ $int -eq "1" ] ; then
-	cd ~
-	mkdir -p .config/aria2
-	cd zstermux
-	cp aria2.conf ~/.config/aria2/aria2.conf
         sh a2.sh
 elif
 	[ $int -eq "2" ] ; then
