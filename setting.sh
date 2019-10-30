@@ -27,6 +27,5 @@ elif
 elif
 	[ $int -eq "3" ] ; then
 	termux-wake-lock
-	sh zs.sh
 fi
 exit
