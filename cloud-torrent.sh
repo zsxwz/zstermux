@@ -11,7 +11,7 @@ if [ -d "$HOME/go/src/github.com/jpillora/cloud-torrent" ] ; then
 else
 	cd ~
 	echo "安装golang"
-	echo "安装过程如果报错，请到终端设置，修改为中科大源"
+	echo "安装过程如果报错，请自备上网代理工具"
 	pkg install golang -y
 	echo "安装cloud-torrent，请耐心等待"
 	go get -v github.com/jpillora/cloud-torrent
