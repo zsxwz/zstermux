@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo "1.oh-my-zsh终端配色"
-echo "2.恢复修改底部按键"
+echo "2.恢复/修改底部按键"
 echo "3.国内用户使用中科大软件源"
 echo "4.termux后台运行"
 echo -n "请输入需要执行的命令序号:"
@@ -18,6 +18,7 @@ elif
 
 elif
 	[ $int -eq "3" ] ; then
+	cd ~
 	sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.ustc.edu.cn/termux stable main@'; $PREFIX/etc/apt/sources.list
 	apt update
 	apt upgrade
