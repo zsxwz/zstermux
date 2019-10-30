@@ -1,6 +1,6 @@
 # zstermux
 
-一个termux一键脚本，一键安装运行各种好玩的，UnblockNeteaseMusic解锁云音乐代理，常用视频下载工具youtub-dl，和annie，常用等等。
+一个termux一键脚本，一键安装运行各种好玩的，UnblockNeteaseMusic解锁云音乐代理，常用视频下载工具youtub-dl，和annie，常用磁力种子下载工具cloud-torrent，peerfliex，aria2，及百度提取码查询，baidupcs命令行版和网页版等等，还有终端配色，修改恢复更多按键，由于清华源和中科大源都存在一些问题，不太建议更换国内源。
 
 安装脚本：
 ```
@@ -34,8 +34,6 @@ screen -r aria2
 一个是网页版pcs-web，安卓版本没有修改配置选项，因此需要安装命令行版pcs-go。
 
 3.云音乐代理，如果新版本失效了，请安装旧版本的云音乐。
-
-4.aria2的配置安卓版本有一点点的差别，也可以使用推荐配置
 
 
 预览图：
