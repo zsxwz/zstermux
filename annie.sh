@@ -6,7 +6,7 @@ if [ -x "$(command -v annie)" ] ; then
 else
 	cd ~
 	echo "安装golang"
-	echo "安装过程如果报错，请到终端设置，修改为中科大源"
+	echo "安装过程如果报错，请自备上网代理软件"
 	pkg install golang -y
 	echo "安装annie，请耐心等待"
 	go get github.com/iawia002/annie
