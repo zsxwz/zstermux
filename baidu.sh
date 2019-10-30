@@ -13,4 +13,7 @@ if
 elif
 	[ $int -eq "2" ] ; then
 	sh baidupcs-web.sh
+elif
+	[ $int -eq "3" ] ; then
+	sh baidupankey.sh
 fi
