@@ -1,6 +1,6 @@
 # zstermux
 
-一个termux一键脚本，一键安装运行各种好玩的，UnblockNeteaseMusic，aria2等等。
+一个termux一键脚本，一键安装运行各种好玩的，UnblockNeteaseMusic解锁云音乐代理，常用视频下载工具youtub-dl，和annie，常用等等。
 
 安装脚本：
 ```
@@ -12,8 +12,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/inst
 ```
 sh zs.sh
 
-#或者
-zs
 ```
 
 使用screen后台运行，重启手机或者强制停止termux即可关闭后台程序。或者：
