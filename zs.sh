@@ -10,7 +10,7 @@ echo "1.基础运行环境，软件安装"
 echo "2.百度网盘提取码及不限速下载"
 echo "3.网易云音乐代理"
 echo "4.常用磁力下载工具"
-echo "5.youtube-dl视频下载"
+echo "5.常用视频下载工具"
 echo “6.http-server服务"
 echo "7.推荐终端设置"
 echo "0.退出脚本"
@@ -38,7 +38,7 @@ elif
 
 elif
 	[ $int -eq "5" ] ; then
-	sh youtube-dl.sh
+	sh video.sh
 elif
         [ $int -eq "7" ] ; then
 	bash http-server.sh
