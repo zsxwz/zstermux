@@ -11,11 +11,13 @@ if
 	[ $int -eq "1" ] ; then
         cp termux.properties ~/.termux
         termux-reload-settings
+	sh zs.sh
 
 elif
 	[ $int -eq "2" ] ; then
 	cd ~
 	vim .termux/termux.properties
 	termux-reload-settings
+	sh zs.sh
 fi
 exit
