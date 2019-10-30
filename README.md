@@ -25,17 +25,17 @@ kill pid
 //恢复窗口，screen -r 窗口名，如恢复aria2窗口：
 screen -r aria2
 ```
-一些注意事项：
 
-1.第一次安装，请先安装环境。国内网络不稳定，安装环境过程难免会丢失一些东西，重新安装一次环境即可。
+一些注意事项及使用教程：
 
-2.百度网盘下载，一个是命令行版pcs-go，如果不是黑号就无需修改配置，如果是黑号，根据提示修改即可。
+1.百度网盘提取码查询：https://bbs.zsxwz.com/thread-228.htm
 
-一个是网页版pcs-web，安卓版本没有修改配置选项，因此需要安装命令行版pcs-go。
+2.网易云音乐代理：https://bbs.zsxwz.com/thread-648.htm
 
-3.云音乐代理，如果新版本失效了，请安装旧版本的云音乐。
+3.边下边播：[peerflix](https://zsxwz.com/2019/09/13/%e7%bd%91%e9%a1%b5%e7%89%88bt%e7%a3%81%e5%8a%9b%e4%b8%8b%e8%bd%bd%e5%b7%a5%e5%85%b7peerflix-server%ef%bc%8c%e8%be%b9%e4%b8%8b%e8%be%b9%e6%92%ad%e3%80%82/)
+
+4.annie视频下载：[annie](https://zsxwz.com/2019/09/25/annie%e4%b8%80%e6%ac%be%e5%9f%ba%e4%ba%8ego%e7%9a%84%e5%90%84%e5%a4%a7%e8%a7%86%e9%a2%91%e7%bd%91%e7%ab%99%e8%a7%86%e9%a2%91%e4%b8%8b%e8%bd%bd%e5%88%a9%e5%99%a8/)
+
+5.老司机cloud-torrent：https://bbs.zsxwz.com/thread-1304.htm
 
 
-预览图：
-
-![图](https://ae01.alicdn.com/kf/Hbd1df584097043dba9aa4149f204a9b9G.jpg)
