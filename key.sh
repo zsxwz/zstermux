@@ -11,6 +11,7 @@ if
 	[ $int -eq "1" ] ; then
         cp termux.properties ~/.termux
         termux-reload-settings
+	cd ~
 	sh zs.sh
 
 elif
