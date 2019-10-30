@@ -3,7 +3,8 @@
 echo ""
 echo "1.安装/运行aria2服务"
 echo "2.修改aria2配置"
-
+echo -n "请输入要执行命令的序号"
+echo ""
 read int
 if
 	[ $int -eq "1" ] ; then
