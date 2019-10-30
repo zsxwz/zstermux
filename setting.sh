@@ -4,6 +4,7 @@ echo "1.oh-my-zsh终端配色"
 echo "2.恢复修改底部按键"
 echo "3.国内用户使用中科大软件源"
 echo "4.termux后台运行"
+echo "请输入需要执行的命令序号:"
 
 read int
 if
