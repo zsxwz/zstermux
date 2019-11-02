@@ -4,7 +4,10 @@
 
 安装脚本：
 ```
+# 旧版的termux可能curl都没有安装，先安装一下即可
+pkg install curl -y
 
+# 下载运行脚本
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/install.sh)"  
 ```
 
