@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -x "$(command -v youtube-dl)" ]; then
+if [ -x "$(command -v youtube-dl)" ] ; then
   echo ""
 	echo "使用方法："
 	echo "youtube-dl-interactive 视频链接url"
