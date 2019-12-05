@@ -1,10 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -d "$PREFIX/bin/youtube-dl" ] ; then
+if [ -x "$(command -v youtube-dl)" ]; then
   echo ""
 	echo "使用方法："
 	echo "youtube-dl-interactive 视频链接url"
-	sh zs.sh
+
 else
         echo "安装更新python"
         pkg install python -y
@@ -14,6 +14,5 @@ else
 	npm install -g youtube-dl-interactive
 	echo "使用方法："
 	echo "youtube-dl-interactive 视频链接url"
-	sh zs.sh
 fi
 exit
