@@ -12,9 +12,9 @@ if [ -d "$HOME/webui-aria2" ] ; then
 	screen -dmS webui node node-server.js
 	echo ""
 	echo -e "\033[31maria2面板已在后台运行\033[0m"
-	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
+	echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:8888\033[0m"
 	echo ""
-        am start -a android.intent.action.VIEW -d http://localhost:8888
+        am start -a android.intent.action.VIEW -d http://127.0.0.1:8888
         cd ~
         sh zs.sh
         
@@ -31,9 +31,9 @@ else
         screen -dmS webui node node-server.js
 	echo ""
         echo -e "\033[31maria2面板已在后台运行\033[0m"
-	echo -e "\033[31m请用chrome浏览器打开，localhost:8888\033[0m"
+	echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:8888\033[0m"
 	echo ""
-        am start -a android.intent.action.VIEW -d http://localhost:8888
+        am start -a android.intent.action.VIEW -d http://127.0.0.1:8888
         cd ~
         sh zs.sh
         
