@@ -20,6 +20,7 @@ if [ -d "$HOME/webui-aria2" ] ; then
         
 
 else
+	crontab -l | { cat; echo "30 19 * * * $HOME/zstermux/trackers-list-aria2.sh"; } | crontab -
 	cd ~
 	mkdir -p .config/aria2
 	cd zstermux
