@@ -1,24 +1,21 @@
 #!/data/data/com.termux/files/usr/bin/bash
-echo ""
-echo "1.安装http-server"
-echo "2.运行http-server"
-echo "3.关闭http-server"
-echo ""
-echo -n "请输入需要执行的命令序号:"
-read int
-if
-	[ $int -eq "1" ] ; then
-	npm install -g http-server
-	sh http-server.sh
-elif
-	[ $int -eq "2" ] ; then
-cd ~
-	screen -S http http-server
-elif
-	[ $int -eq "3" ] ; then
-        screen -S http -X quit
-	echo"服务已关闭"
-	echo""
-sh http-server.sh
+
+if [ ! -x "$HOME/chfs" ] ; then
+        cd ~
+	screen -dmS chfs ./chfs --port=1234 --path="/sdcard"
+	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1234"
+	am start -a android.intent.action.VIEW -d http://localhost:1234
+	cd ~
+	sh zs.sh
+else
+	cd ~
+	wget https://iscute.cn/tar/chfs/2.0/chfs-linux-arm64-2.0.zip
+	unzip chfs-linux-arm64-2.0.zip
+	chmod +x chfs
+	screen -dmS chfs ./chfs --port=1234 --path="/sdcard"
+	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1234"
+	am start -a android.intent.action.VIEW -d http://localhost:1234
+	cd ~
+	sh zs.sh
 fi
 exit
