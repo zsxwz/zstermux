@@ -1,8 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -d "$HOME/go/src/github.com/jpillora/cloud-torrent" ] ; then
+if [ -d "$HOME/cloud-torrent" ] ; then
         cd ~
-	cd go/bin
 	screen -dmS cloud-torrert ./cloud-torrent -p 1024
 	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1024"
 	am start -a android.intent.action.VIEW -d http://localhost:1024
@@ -10,12 +9,10 @@ if [ -d "$HOME/go/src/github.com/jpillora/cloud-torrent" ] ; then
 	sh zs.sh
 else
 	cd ~
-	echo "安装golang"
-	echo "安装过程如果报错，请自备上网代理工具"
-	pkg install golang -y
-	echo "安装cloud-torrent，请耐心等待"
-	go get -v github.com/jpillora/cloud-torrent
-	cd go/bin
+	wget https://github.com/boypt/simple-torrent/releases/download/1.2.6/cloud-torrent_linux_amd64.gz
+	gzip -d cloud-torrent_linux_amd64.gz
+	mv cloud-torrent_linux_amd64 cloud-torrent
+	chmod +x cloud-torrent
 	screen -dmS cloud-torrert ./cloud-torrent -p 1024
 	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1024"
 	echo ""
