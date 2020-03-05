@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ ! -x "$HOME/chfs" ] ; then
+if [ -x "$(command -v chfs)"  ] ; then
         cd ~
 	screen -dmS chfs chfs --port=1234 --path="/sdcard"
 	ifconfig
