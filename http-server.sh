@@ -5,7 +5,6 @@ if [ ! -x "$HOME/chfs" ] ; then
 	screen -dmS chfs chfs --port=1234 --path="/sdcard"
 	ifconfig
 	echo "chfs已在后台运行，ifconfig查看局域网ip地址，浏览器打开192.168.xxx.xxx:1234"
-	am start -a android.intent.action.VIEW -d http://localhost:1234
 	cd ~
 	sh zs.sh
 else
@@ -17,7 +16,6 @@ else
 	screen -dmS chfs chfs --port=1234 --path="/sdcard"
 	ifconfig
 	echo "chfs已在后台运行，ifconfig查看局域网ip地址，浏览器打开192.168.xxx.xxx:1234"
-	am start -a android.intent.action.VIEW -d http://localhost:1234
 	cd ~
 	sh zs.sh
 fi
