@@ -3,7 +3,8 @@
 if [ ! -x "$HOME/chfs" ] ; then
         cd ~
 	screen -dmS chfs chfs --port=1234 --path="/sdcard"
-	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1234"
+	ifconfig
+	echo "chfs已在后台运行，ifconfig查看局域网ip地址，浏览器打开192.168.xxx.xxx:1234"
 	am start -a android.intent.action.VIEW -d http://localhost:1234
 	cd ~
 	sh zs.sh
@@ -14,7 +15,8 @@ else
 	chmod +x chfs
 	mv chfs /data/data/com.termux/files/usr/bin/chfs
 	screen -dmS chfs chfs --port=1234 --path="/sdcard"
-	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1234"
+	ifconfig
+	echo "chfs已在后台运行，ifconfig查看局域网ip地址，浏览器打开192.168.xxx.xxx:1234"
 	am start -a android.intent.action.VIEW -d http://localhost:1234
 	cd ~
 	sh zs.sh
