@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ ! -x "$HOME/cloud-torrent" ] ; then
+if [ -x "$(command -v cloud-torrert)"  ] ; then
         cd ~
 	screen -dmS cloud-torrert cloud-torrent -p 1024
 	echo "cloud-torrent已在后台运行，请用浏览器打开访问，localhost:1024"
