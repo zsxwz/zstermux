@@ -14,7 +14,7 @@ if [ -d "$HOME/BaiduPCS-web" ] ; then
 	sh zs.sh
 else
 	cd ~
-	wget -O 1.zip https://github.com/liuzhuoling2011/baidupcs-web/releases/download/3.6.8/BaiduPCS-Go-3.6.8-android-arm64.zip
+	wget -O 1.zip https://github.com/liuzhuoling2011/baidupcs-web/releases/download/3.7.0/BaiduPCS-Go-3.7.0-android-arm64.zip
 	unzip 1.zip && rm 1.zip
 	mv BaiduPCS-Go-3.6.8-android-arm64 BaiduPCS-web
 	cd ~/BaiduPCS-web
