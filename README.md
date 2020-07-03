@@ -13,7 +13,7 @@ pkg install curl -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zsxwz/zstermux/master/install.sh)"  
 ```
 
-执行脚本：
+运行脚本：
 ```
 sh zs.sh
 或者
