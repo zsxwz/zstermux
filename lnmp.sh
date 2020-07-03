@@ -51,4 +51,4 @@ else
 echo "php已安装"
 fi 
 echo "网站根目录：/data/data/com.termux/files/usr/share/nginx/html/kod"
-echo "\网站默认端口8080"
+echo "网站默认端口8080"

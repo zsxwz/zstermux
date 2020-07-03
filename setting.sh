@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 cd ~/zstermux
-echo "\t1.oh-my-zsh终端配色"
-echo "\t2.恢复/修改底部按键"
-echo "\t3.换源"
+echo "1.oh-my-zsh终端配色"
+echo "2.恢复/修改底部按键"
+echo "3.换源"
 echo ""
 read -p "请输入数字：" ini
 

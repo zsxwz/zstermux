@@ -2,8 +2,8 @@
 cd ~/zstermux
 
 echo ""
-echo "\t1.chfs文件共享"
-echo "\t2.kod文件管理器"
+echo "1.chfs文件共享"
+echo "2.kod文件管理器"
 echo ""
 
 read -p "请输入数字：" ini

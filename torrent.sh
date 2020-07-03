@@ -2,8 +2,8 @@
 cd ~/zstermux
 
 echo ""
-echo "\t1.安装/运行aria2高速下载"
-echo "\t2.安装/运行cloud-torrent磁力下载"
+echo "1.安装/运行aria2高速下载"
+echo "2.安装/运行cloud-torrent磁力下载"
 echo ""
 
 read -p "请输入数字：" ini

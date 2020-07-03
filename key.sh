@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo ""
-echo "\t1.恢复更多按键"
-echo "\t2.修改按键 \n\t 修改完之后ctrl +o保存 ，ctrl + x 退出"
+echo "1.恢复更多按键"
+echo "2.修改按键 \n\t 修改完之后ctrl +o保存 ，ctrl + x 退出"
 
 echo ""
 read -p "请输入数字：" ini

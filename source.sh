@@ -2,9 +2,9 @@
 
 cd ~/zstermux
 echo ""
-echo "\t1.自动换源"
-echo "\t2.手动换源"
-echo "\t3.恢复默认源"
+echo "1.自动换源"
+echo "2.手动换源"
+echo "3.恢复默认源"
 
 echo ""
 read -p "请输入数字：" ini 
