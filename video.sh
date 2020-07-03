@@ -7,7 +7,7 @@ echo "2.youtube-dl视频下载"
 echo "3.annie视频下载"
 echo ""
 
-read - p "请输入数字：" ini
+read -p "请输入数字：" ini
 
 case $ini in
 1)

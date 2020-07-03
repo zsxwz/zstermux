@@ -5,7 +5,7 @@ echo "\t1.恢复更多按键"
 echo "\t2.修改按键 \n\t 修改完之后ctrl +o保存 ，ctrl + x 退出"
 
 echo ""
-read - p "请输入数字：" ini
+read -p "请输入数字：" ini
 
 case $ini in
 1)

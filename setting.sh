@@ -4,7 +4,7 @@ echo "\t1.oh-my-zsh终端配色"
 echo "\t2.恢复/修改底部按键"
 echo "\t3.换源"
 echo ""
-read - p "请输入数字：" ini
+read -p "请输入数字：" ini
 
 case $ini in
 1)
