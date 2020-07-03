@@ -20,7 +20,7 @@ read -p "请输入数字：" ini
 
 case $ini in
 1)
-bash seeting.sh
+bash setting.sh
 ;;
 2)
 bash lnmp.sh
