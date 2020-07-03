@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 cd ~/zstermux
-menu(){
+
 echo ""
 echo "获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
 echo ""
@@ -14,7 +14,7 @@ echo "6.Adguard dns服务"
 echo "7.局域网文件共享服务"
 echo "8.帮助"
 echo ""
-}
+
 
 read -p "请输入数字：" ini
 
@@ -49,8 +49,6 @@ bash zs.sh
 exit 0
 ;;
 esac
-
-menu
 
 
 
