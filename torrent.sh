@@ -2,7 +2,7 @@
 cd ~/zstermux
 
 echo ""
-echo "1.安装/运行aria2高速下载"
+echo "1.安装/运行aria2下载"
 echo "2.安装/运行cloud-torrent磁力下载"
 echo ""
 
