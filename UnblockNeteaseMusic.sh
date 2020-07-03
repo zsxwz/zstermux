@@ -1,5 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+if ! [ -x "$(command -v node)"  ] ; then
+apt install nodejs -y
+fi
+if ! [ -x "$(command -v screen)"  ] ; then
+apt install screen -y
+fi
+if ! [ -x "$(command -v git)"  ] ; then
+apt install git -y
+fi
+
 if [ -d "$HOME/UnblockNeteaseMusic" ] ; then
 	cd ~/UnblockNeteaseMusic
 	screen -dmS music node app.js
