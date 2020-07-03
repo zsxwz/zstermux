@@ -3,7 +3,7 @@ cd ~/zstermux
 
 echo ""
 echo "1.youtube-dl视频下载"
-echo "2.youtube-dl视频下载"
+echo "2.you-视频下载"
 echo "3.annie视频下载"
 echo ""
 
