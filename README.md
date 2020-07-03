@@ -32,3 +32,5 @@ kill pid
 screen -r aria2
 ```
 
+预览：
+![](https://cdn.jsdelivr.net/gh/zsxwz/tuchuang@latest/2020/07/03/a7e4a5d4cc197671db522ad3ef22be6f.png)
