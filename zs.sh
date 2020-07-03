@@ -20,7 +20,7 @@ read -p "请输入数字：" ini
 
 case $ini in
 1)
-bash seetings.sh
+bash seeting.sh
 ;;
 2)
 bash lnmp.sh
@@ -49,29 +49,3 @@ bash zs.sh
 exit 0
 ;;
 esac
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
