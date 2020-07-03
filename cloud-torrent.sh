@@ -1,5 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+if ! [ -x "$(command -v screen)"  ] ; then
+apt install screen -y
+fi
+
 if [ -x "$(command -v cloud-torrert)"  ] ; then
         cd ~
 	screen -dmS cloud-torrert cloud-torrent -p 1024
@@ -9,7 +13,7 @@ if [ -x "$(command -v cloud-torrert)"  ] ; then
 	sh zs.sh
 else
 	cd ~
-	wget https://github.com/boypt/simple-torrent/releases/download/1.2.6/cloud-torrent_linux_amd64.gz
+	wget https://github.zsxwz.com/https://github.com/boypt/simple-torrent/releases/download/1.2.11/cloud-torrent_linux_arm64.gz
 	gzip -d cloud-torrent_linux_amd64.gz
 	chmod +x cloud-torrent_linux_amd64
 	mv cloud-torrent_linux_amd64 /data/data/com.termux/files/usr/bin/cloud-torrent

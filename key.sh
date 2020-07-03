@@ -1,24 +1,26 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo ""
-echo "1.恢复更多按键"
-echo "2.修改按键"
-echo "修改按键,输入i，编辑。按esc退出编辑，输入:wq!，保存退出。"
-echo ""
-echo -n "请输入需要执行的命令序号:"
-read int
-if
-	[ $int -eq "1" ] ; then
-        cp termux.properties ~/.termux
-        termux-reload-settings
-	cd ~
-	sh zs.sh
+echo "\t1.恢复更多按键"
+echo "\t2.修改按键 \n\t 修改完之后ctrl +o保存 ，ctrl + x 退出"
 
-elif
-	[ $int -eq "2" ] ; then
-	cd ~
-	vim .termux/termux.properties
-	termux-reload-settings
-	sh zs.sh
-fi
-exit
+echo ""
+read - p "请输入数字：" ini
+
+case $ini in
+1)
+cp termux.properties ~/.termux
+termux-reload-settings
+cd ~
+sh zs.sh
+;;
+2)
+nano .termux/termux.properties
+termux-reload-settings
+cd ~
+sh zs.sh
+;;
+*)
+exit 0
+;;
+esac

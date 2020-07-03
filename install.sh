@@ -1,13 +1,19 @@
 #!/data/data/com.termux/files/usr/bin/bash
 rm zs.sh
-rm -r zstermux
-pkg upgrade -y
-pkg install git -y
-git clone https://github.com/zsxwz/zstermux.git
+rm -r ~/zstermux
+
+if ! [ -x "$(command -v unzip)"  ] ; then
+apt install unzip -y
+fi
+
+wget -O zs.zip https://github.com/zsxwz/zstermux/archive/master.zip
+unzip zs.zip
+rm zs.zip
+mv zstermux-master zstermux
 
 mkdir .termux
 cp -f "$HOME/zstermux/zs.sh" "$HOME/zs.sh"
-alias zs='sh zs.sh'
+cd ~
+chmod +x zs.sh
 bash zs.sh
-
 exit

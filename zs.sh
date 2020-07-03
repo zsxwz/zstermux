@@ -1,54 +1,75 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-cd zstermux
+cd ~/zstermux
 echo ""
 echo "获取更多好玩内容请到姿势论坛。https://bbs.zsxwz.com/"
-echo -e "\033[31m第一次安装使用，或者安装过程报错，请务必安装一次运行环境,输入1，即可。\033[0m"
 echo ""
-echo "1.基础运行环境，软件安装"
-echo "2.百度网盘提取码及不限速下载"
-echo "3.网易云音乐代理"
-echo "4.常用磁力下载工具"
-echo "5.常用视频下载工具"
-echo "6.chfs文件共享服务"
-echo "7.推荐终端设置"
-echo "0.退出脚本"
+echo "\t1.换源等设置"
+echo "\t2.建站环境安装"
+echo "\t3.网易云音乐代理"
+echo "\t4.常用磁力下载工具"
+echo "\t5.常用视频下载工具"
+echo "\t6.Adguard dns服务"
+echo "\t7.局域网文件共享服务"
+echo "\t8.帮助"
 echo ""
-echo -n "请输入需要执行的命令序号:"
 
-read int
-if
-	[ $int -eq "1" ] ; then
-	termux-setup-storage
-        pkg install wget unzip nodejs aria2 vim screen axel ffmpeg -y
-	cd ~
-	bash zs.sh
+read - p "请输入数字：" ini
 
-elif
-	[ $int -eq "2" ] ; then
-	bash baidu.sh
+case $ini in
+1)
+bash seetings.sh
+;;
+2)
+bash lnmp.sh
+;;
+3)
+bash UnblockNeteaseMusic.sh
+;;
+4)
+bash torrent.sh
+;;
+5)
+bash video.sh
+;;
+6)
+bash adguard.sh
+;;
+7)
+bash http-server.sh
+;;
+8)
+echo "需要什么就安装什么，不需要的不会安装"
+;;
+*)
+exit 0
+;;
+esac
 
-elif
-	[ $int -eq "3" ] ; then
-	bash UnblockNeteaseMusic.sh
 
-elif
-	[ $int -eq "4" ] ; then
-	bash torrent.sh
 
-elif
-	[ $int -eq "5" ] ; then
-	sh video.sh
-elif
-        [ $int -eq "6" ] ; then
-	bash http-server.sh
-	
-elif
-        [ $int -eq "7" ] ; then
-	bash setting.sh
 
-elif
-	[ $int -eq "0" ] ; then
-	exit
-fi
-exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
