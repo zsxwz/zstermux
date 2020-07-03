@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
-rm zs.sh
-rm -r ~/zstermux
+rm -rf zs.sh
+rm -rf ~/zstermux
 
 if ! [ -x "$(command -v unzip)"  ] ; then
 apt install unzip -y
