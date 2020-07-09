@@ -6,6 +6,10 @@ if ! [ -x "$(command -v unzip)"  ] ; then
 apt install unzip -y
 fi
 
+if ! [ -x "$(command -v wget)"  ] ; then
+apt install wget -y
+fi
+
 wget -O zs.zip https://github.com/zsxwz/zstermux/archive/master.zip
 unzip zs.zip
 rm zs.zip
