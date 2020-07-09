@@ -2,7 +2,7 @@
 
 if [ ! -x "$(command -v chfs)"  ] ; then
     cd ~
-    wget https://iscute.cn/tar/chfs/2.0/chfs-linux-arm64-2.0.zip
+    wget https://iscute.cn/tar/chfs/2.0/chfs-linux-arm64-2.0.zip --no-check-certificate
     unzip chfs-linux-arm64-2.0.zip
     chmod +x chfs
     mv chfs /data/data/com.termux/files/usr/bin/chfs
