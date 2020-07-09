@@ -1,5 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+if ! [ -x "$(command -v screen)"  ] ; then
+apt install screen -y
+fi
+
 if [ ! -x "$(command -v chfs)"  ] ; then
     cd ~
     wget https://iscute.cn/tar/chfs/2.0/chfs-linux-arm64-2.0.zip --no-check-certificate
