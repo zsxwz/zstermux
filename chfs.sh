@@ -17,7 +17,7 @@ if [ ! -x "$(command -v chfs)"  ] ; then
     echo "$password" |base64 -i > password
     var2=$(base64 -d password)
     screen -dmS chfs chfs --port=1234 --path="/sdcard" --rule="::r|$var1:$var2:rwd"
-    echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:1024\033[0m"
+    echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:1234\033[0m"
 	echo ""
     am start -a android.intent.action.VIEW -d http://127.0.0.1:1234
     
@@ -26,7 +26,7 @@ else
     var1=$(cat name)
     var2=$(base64 -d password)
     screen -dmS chfs chfs --port=1234 --path="/sdcard" --rule="::r|$var1:$var2:rwd"
-    echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:1024\033[0m"
+    echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:1234\033[0m"
 	echo ""
     am start -a android.intent.action.VIEW -d http://127.0.0.1:1234
 fi
