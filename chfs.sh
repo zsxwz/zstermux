@@ -19,7 +19,7 @@ if [ ! -x "$(command -v chfs)"  ] ; then
     screen -dmS chfs chfs --port=1234 --path="/sdcard" --rule="::r|$var1:$var2:rwd"
     echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:1024\033[0m"
 	echo ""
-    am start -a android.intent.action.VIEW -d http://127.0.0.1:1024
+    am start -a android.intent.action.VIEW -d http://127.0.0.1:1234
     
 else
     cd ~
@@ -28,7 +28,7 @@ else
     screen -dmS chfs chfs --port=1234 --path="/sdcard" --rule="::r|$var1:$var2:rwd"
     echo -e "\033[31m请用chrome浏览器打开，127.0.0.1:1024\033[0m"
 	echo ""
-    am start -a android.intent.action.VIEW -d http://127.0.0.1:1024
+    am start -a android.intent.action.VIEW -d http://127.0.0.1:1234
 fi
 exit
  
