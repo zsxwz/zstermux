@@ -14,6 +14,10 @@ if ! [ -x "$(command -v aria2c)"  ] ; then
 apt install aria2 -y
 fi
 
+if ! [ -x "$(command -v crontab)"  ] ; then
+apt install cronie -y
+fi
+
 screen -wipe
 screen -dmS aria2 aria2c --enable-rpc --rpc-listen-all
 echo ""
