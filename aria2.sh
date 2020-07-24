@@ -48,6 +48,7 @@ else
 	bash $HOME/zstermux/trackers-list-aria2.sh
 	
 	cd webui-aria2
+	screen -dmS aria2 aria2c --enable-rpc --rpc-listen-all
         screen -dmS webui node node-server.js
 	echo ""
         echo -e "\033[31maria2面板已在后台运行\033[0m"
