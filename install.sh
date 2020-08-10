@@ -10,7 +10,7 @@ if ! [ -x "$(command -v wget)"  ] ; then
 apt install wget -y
 fi
 
-wget -O zs.zip https://github.zsxwz.com/https://github.com/zsxwz/zstermux/archive/master.zip
+wget -O zs.zip https://github.com/zsxwz/zstermux/archive/master.zip
 unzip zs.zip
 rm zs.zip
 mv zstermux-master zstermux
