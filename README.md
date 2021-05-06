@@ -36,13 +36,13 @@ screen -r aria2
 
 这个脚本是单独的，还没有加入上面的zstermux脚本。
 
-签到做活动脚本均来自：![jd_scripts](https://github.com/chinnkarahoi/jd_scripts)，本脚本只是一键在termux本地运行的shell脚本。
+签到做活动脚本均来自：[jd_scripts](https://github.com/chinnkarahoi/jd_scripts)，本脚本只是一键在termux本地运行的shell脚本。
 
 注意一下：
 
 - 京东cookie一般有效期为一个月，过期了就再获取一遍。
 
-- 通知渠道可以使用[server酱](http://sc.ftqq.com/3.version)，cookie过期通知，一些重要提醒通知。需要自己先获取SCKEY。也可以使用钉钉等等渠道，详细自己查看原docker版说明。
+- 通知渠道可以使用 [server酱](http://sc.ftqq.com/3.version)，cookie过期通知，一些重要提醒通知。需要自己先获取SCKEY。也可以使用钉钉等等渠道，详细自己查看原docker版说明。
 
 - 有些活动时间久了就没有了，[大佬docker版](https://github.com/chinnkarahoi/jd-scripts-docker)可以自动更新。但是这个脚本懒的写了，就这样吧。。。
 
