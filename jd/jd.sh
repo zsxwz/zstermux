@@ -18,7 +18,11 @@ fi
 
 if ! [ -x "$(command -v node)"   ] ; then
 	apt install node -y
-	npm install -g download --registry https://registry.npm.taobao.org
+	npm install download --registry https://registry.npm.taobao.org
+	npm install qrcode-terminal --registry https://registry.npm.taobao.org
+	npm install tough-cookie --registry https://registry.npm.taobao.org
+	npm install request --registry https://registry.npm.taobao.org
+	npm install ws --registry https://registry.npm.taobao.org
 fi
 
 if ! [ -d "$HOME/jd_scripts"  ] ; then
