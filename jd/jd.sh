@@ -23,6 +23,8 @@ if ! [ -x "$(command -v node)"   ] ; then
 	npm install tough-cookie --registry https://registry.npm.taobao.org
 	npm install request --registry https://registry.npm.taobao.org
 	npm install ws --registry https://registry.npm.taobao.org
+	npm install fs --registry https://registry.npm.taobao.org
+	npm install exec --registry https://registry.npm.taobao.org
 fi
 
 if ! [ -d "$HOME/jd_scripts"  ] ; then
