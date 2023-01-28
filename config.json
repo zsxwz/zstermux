@@ -1,0 +1,45 @@
+{
+  "stats": {},
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "localhost"
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 8013,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4d634ed8-c9f0-a0a4-4fae-f7fa7a7dc739",
+            "email": "auser",
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/zs123xwz"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      }
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ]
+}
