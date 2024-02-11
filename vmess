@@ -1,0 +1,57 @@
+[general]
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url=http://www.baidu.com/
+server_check_url=http://www.gstatic.com/generate_204
+
+[dns]
+server=119.29.29.29
+server=223.5.5.5
+server=1.0.0.1
+server=8.8.8.8
+
+[policy]
+static=🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
+static=♻️ 自动选择, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+static=🌍 国外媒体, 🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+static=🌏 国内媒体, 🎯 全球直连, 🔰 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
+static=Ⓜ️ 微软服务, 🎯 全球直连, 🔰 节点选择, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
+static=📲 电报信息, 🔰 节点选择, 🎯 全球直连, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=🍎 苹果服务, 🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=🎯 全球直连, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
+static=🛑 全球拦截, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
+static=🐟 漏网之鱼, 🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 74.48.183.202:34441, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+
+[server_remote]
+
+[filter_remote]
+https://id9.cc/getruleset?type=2&url=cnVsZXMvTG9jYWxBcmVhTmV0d29yay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvTVNTZXJ2aWNlcy5saXN0&group=4pOC77iPIOW-rui9r-acjeWKoQ, tag=Ⓜ️ 微软服务, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvVW5icmVhay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvTm9ieURhL1N1cmdlL0FkUnVsZS5saXN0&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvR3VhcmQvSGlqYWNraW5nLmxpc3Q&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvU3RyZWFtaW5nTWVkaWEvU3RyZWFtaW5nLmxpc3Q&group=8J-MjSDlm73lpJblqpLkvZM, tag=🌍 国外媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvbGhpZTEvU3VyZ2UvU3VyZ2UgMy9Qcm92aWRlci9NZWRpYS9CaWxpYmlsaS5saXN0&group=8J-MjyDlm73lhoXlqpLkvZM, tag=🌏 国内媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvbGhpZTEvU3VyZ2UvU3VyZ2UgMy9Qcm92aWRlci9NZWRpYS9pUWl5aS5saXN0&group=8J-MjyDlm73lhoXlqpLkvZM, tag=🌏 国内媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvbGhpZTEvU3VyZ2UvU3VyZ2UgMy9Qcm92aWRlci9NZWRpYS9MZXR2Lmxpc3Q&group=8J-MjyDlm73lhoXlqpLkvZM, tag=🌏 国内媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvbGhpZTEvU3VyZ2UvU3VyZ2UgMy9Qcm92aWRlci9NZWRpYS9NT08ubGlzdA&group=8J-MjyDlm73lhoXlqpLkvZM, tag=🌏 国内媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvbGhpZTEvU3VyZ2UvU3VyZ2UgMy9Qcm92aWRlci9NZWRpYS9UZW5jZW50IFZpZGVvLmxpc3Q&group=8J-MjyDlm73lhoXlqpLkvZM, tag=🌏 国内媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvbGhpZTEvU3VyZ2UvU3VyZ2UgMy9Qcm92aWRlci9NZWRpYS9Zb3VrdS5saXN0&group=8J-MjyDlm73lhoXlqpLkvZM, tag=🌏 国内媒体, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvRXh0cmEvVGVsZWdyYW0vVGVsZWdyYW0ubGlzdA&group=8J-TsiDnlLXmiqXkv6Hmga8, tag=📲 电报信息, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvR2xvYmFsLmxpc3Q&group=8J-UsCDoioLngrnpgInmi6k, tag=🔰 节点选择, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvRXh0cmEvQXBwbGUvQXBwbGUubGlzdA&group=8J-NjiDoi7nmnpzmnI3liqE, tag=🍎 苹果服务, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvQ2hpbmEubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://id9.cc/getruleset?type=2&url=cnVsZXMvTm9ieURhL1N1cmdlL0Rvd25sb2FkLmxpc3Q&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+
+[rewrite_remote]
+
+[server_local]
+vmess = 74.48.183.202:34441, method=chacha20-ietf-poly1305, password=890b8a74-6d0d-4a81-8779-db6e5e8cca5b, obfs=ws, obfs-host=74.48.183.202, obfs-uri=/, tag=74.48.183.202:34441
+
+[filter_local]
+GEOIP,CN,🎯 全球直连
+FINAL,🐟 漏网之鱼
+
+[rewrite_local]
+
+[mitm]
